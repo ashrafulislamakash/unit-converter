@@ -63,7 +63,7 @@ const MeasureView = ({ measure, value, setValue }) => {
           ))}
         </Picker>
         <View style={styles.column}>
-          <Text style={[styles.input, { fontSize: 40, fontWeight: "bold" }]}>
+          <Text style={[styles.input, { fontSize: 30, fontWeight: "bold" }]}>
             {valueConverted}{" "}
           </Text>
         </View>
