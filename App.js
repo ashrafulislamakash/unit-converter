@@ -5,6 +5,13 @@ import { Picker } from "@react-native-community/picker";
 import convert from "convert-units";
 import Constants from "expo-constants";
 import { SimpleLineIcons } from "@expo/vector-icons";
+import {
+  AdMobBanner,
+  AdMobInterstitial,
+  PublisherBanner,
+  AdMobRewarded,
+  setTestDeviceIDAsync,
+} from 'expo-ads-admob';
 
 const measures = convert().measures();
 const mainColor = "#052F5F";
@@ -107,6 +114,14 @@ export default function App() {
           />
         )}
       ></TabView>
+
+
+      <AdMobBanner
+        style={styles.bannerAd}
+        bannerSize="banner"
+        adUnitID="ca-app-pub-3940256099942544/6300978111" // Test ID, Replace with your-admob-unit-id
+        servePersonalizedAds // true or false
+      />
     </View>
   );
 }
@@ -140,4 +155,9 @@ const styles = StyleSheet.create({
     fontSize: 30,
     textAlign: "center",
   },
+
+  bannerAd: {
+    alignSelf: 'center',
+    justifyContent: 'center'
+  }
 });
