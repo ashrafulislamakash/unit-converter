@@ -7,10 +7,10 @@ import Constants from "expo-constants";
 import { SimpleLineIcons } from "@expo/vector-icons";
 import {
   AdMobBanner,
-  AdMobInterstitial,
-  PublisherBanner,
-  AdMobRewarded,
-  setTestDeviceIDAsync,
+  // AdMobInterstitial,
+  // PublisherBanner,
+  // AdMobRewarded,
+  // setTestDeviceIDAsync,
 } from 'expo-ads-admob';
 
 const measures = convert().measures();
@@ -119,8 +119,9 @@ export default function App() {
       <AdMobBanner
         style={styles.bannerAd}
         bannerSize="banner"
-        adUnitID="ca-app-pub-3940256099942544/6300978111" // Test ID, Replace with your-admob-unit-id
+        adUnitID="ca-app-pub-4253394935261285/4235431706"
         servePersonalizedAds // true or false
+        onDidFailToReceiveAdWithError={(e) => console.log(e)}
       />
     </View>
   );

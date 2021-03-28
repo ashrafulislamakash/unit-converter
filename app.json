@@ -1,9 +1,10 @@
 {
   "expo": {
-    "name": "unit-converter",
+    "name": "unit Converter",
     "slug": "unit-converter",
     "version": "1.0.0",
     "orientation": "portrait",
+    "sdkVersion": "40.0.0",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
@@ -13,23 +14,27 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": [],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.damsonsoft.converter",
+      "buildNumber": "1.0.0",
+      "config": {
+        "googleMobileAdsAppId": ""
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
+        "backgroundColor": "#FFFFFF",
+      },
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-4253394935261285~7019902369"
+      },
+      "package": "com.damsonsoft.converter"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     }
   }
 }
-
-
-
